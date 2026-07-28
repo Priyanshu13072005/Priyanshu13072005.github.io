@@ -675,6 +675,22 @@ button[type="submit"]:hover {
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
 }
 
+.stats-subheading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.stats-subheading i {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+}
+
 /* ─── FOOTER ─── */
 footer {
   text-align: center;
