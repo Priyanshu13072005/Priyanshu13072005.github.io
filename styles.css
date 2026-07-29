@@ -1172,6 +1172,185 @@ footer {
   font-size: 0.95rem;
 }
 
+/* ─── GFG CUSTOM CARD ─── */
+.gfg-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.gfg-card-link:hover {
+  text-decoration: none;
+}
+
+.gfg-card {
+  background: #1b1b2f;
+  border-radius: 16px;
+  padding: 28px 32px 20px;
+  max-width: 520px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+.gfg-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(47, 141, 70, 0.25);
+}
+
+.light-mode .gfg-card {
+  background: #1b1b2f;
+  color: #e0e0e0;
+}
+
+.gfg-card-header {
+  margin-bottom: 20px;
+}
+.gfg-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.gfg-logo-icon {
+  flex-shrink: 0;
+}
+.gfg-username {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.gfg-card-body {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 22px;
+}
+
+.gfg-streak-ring {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+.gfg-ring-svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+.gfg-ring-progress {
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gfg-streak-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2;
+}
+.gfg-streak-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #2f8d46;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.gfg-streak-count {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.gfg-difficulty-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.gfg-diff-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+.gfg-diff-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+}
+.gfg-diff-val {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  min-width: 30px;
+  text-align: right;
+}
+
+.gfg-card-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+  gap: 8px;
+}
+.gfg-footer-stat {
+  text-align: center;
+  flex: 1;
+}
+.gfg-footer-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+.gfg-footer-val {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+}
+.gfg-footer-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+@media (max-width: 500px) {
+  .gfg-card {
+    padding: 20px 18px 16px;
+  }
+  .gfg-card-body {
+    gap: 20px;
+  }
+  .gfg-streak-ring {
+    width: 90px;
+    height: 90px;
+  }
+  .gfg-ring-svg {
+    width: 90px;
+    height: 90px;
+  }
+  .gfg-streak-count {
+    font-size: 1.2rem;
+  }
+  .gfg-username {
+    font-size: 1.1rem;
+  }
+  .gfg-footer-label {
+    font-size: 0.65rem;
+  }
+  .gfg-footer-val {
+    font-size: 0.95rem;
+  }
+}
+
 /* ─── REDUCED MOTION ─── */
 @media (prefers-reduced-motion: reduce) {
   *,

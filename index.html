@@ -216,11 +216,60 @@
 
     <section id="coding-stats" class="section stats">
         <h2>CODING STATS</h2>
+
+        <!-- GFG Custom Card -->
+        <h3 class="stats-subheading"><i class="fas fa-code"></i> GeeksforGeeks</h3>
         <div class="stats-container">
-            <a href="https://www.geeksforgeeks.org/user/yesitspriyanshu" target="_blank" rel="noopener">
-                <img src="https://gfgstatscard.vercel.app/yesitspriyanshu" alt="GeeksforGeeks Stats" class="stats-img">
+            <a href="https://www.geeksforgeeks.org/user/yesitspriyanshu" target="_blank" rel="noopener" class="gfg-card-link">
+                <div class="gfg-card" id="gfg-card">
+                    <div class="gfg-card-header">
+                        <div class="gfg-logo-row">
+                            <svg class="gfg-logo-icon" viewBox="0 0 50 32" width="36" height="22"><path d="M25 0 L12.5 16 L25 32 L18.75 32 L6.25 16 L18.75 0 Z" fill="#2f8d46"/><path d="M25 0 L37.5 16 L25 32 L31.25 32 L43.75 16 L31.25 0 Z" fill="#2f8d46"/></svg>
+                            <span class="gfg-username">yesitspriyanshu</span>
+                        </div>
+                    </div>
+                    <div class="gfg-card-body">
+                        <div class="gfg-streak-ring">
+                            <svg viewBox="0 0 120 120" class="gfg-ring-svg">
+                                <circle cx="60" cy="60" r="50" stroke="#1a3a2a" stroke-width="8" fill="none"/>
+                                <circle cx="60" cy="60" r="50" stroke="#2f8d46" stroke-width="8" fill="none"
+                                        stroke-dasharray="314" stroke-dashoffset="314" stroke-linecap="round"
+                                        class="gfg-ring-progress" id="gfg-ring"/>
+                            </svg>
+                            <div class="gfg-streak-text">
+                                <span class="gfg-streak-label">SOLVED</span>
+                                <span class="gfg-streak-count" id="gfg-total">--</span>
+                            </div>
+                        </div>
+                        <div class="gfg-difficulty-list">
+                            <div class="gfg-diff-row"><span class="gfg-diff-name">School</span><span class="gfg-diff-val" id="gfg-school">--</span></div>
+                            <div class="gfg-diff-row"><span class="gfg-diff-name">Basic</span><span class="gfg-diff-val" id="gfg-basic">--</span></div>
+                            <div class="gfg-diff-row"><span class="gfg-diff-name">Easy</span><span class="gfg-diff-val" id="gfg-easy">--</span></div>
+                            <div class="gfg-diff-row"><span class="gfg-diff-name">Medium</span><span class="gfg-diff-val" id="gfg-medium">--</span></div>
+                            <div class="gfg-diff-row"><span class="gfg-diff-name">Hard</span><span class="gfg-diff-val" id="gfg-hard">--</span></div>
+                        </div>
+                    </div>
+                    <div class="gfg-card-footer">
+                        <div class="gfg-footer-stat">
+                            <span class="gfg-footer-label">Coding Score</span>
+                            <span class="gfg-footer-val" id="gfg-coding-score">--</span>
+                        </div>
+                        <div class="gfg-footer-divider"></div>
+                        <div class="gfg-footer-stat">
+                            <span class="gfg-footer-label">Problems Solved</span>
+                            <span class="gfg-footer-val" id="gfg-problems-solved">--</span>
+                        </div>
+                        <div class="gfg-footer-divider"></div>
+                        <div class="gfg-footer-stat">
+                            <span class="gfg-footer-label">Current Streak</span>
+                            <span class="gfg-footer-val" id="gfg-current-streak">--</span>
+                        </div>
+                    </div>
+                </div>
             </a>
         </div>
+
+        <!-- GitHub Streak -->
         <h3 class="stats-subheading"><i class="fab fa-github"></i> GitHub</h3>
         <div class="stats-container">
             <a href="https://github.com/Priyanshu13052005" target="_blank" rel="noopener">

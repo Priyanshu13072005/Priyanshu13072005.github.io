@@ -245,4 +245,46 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+  // ─── GFG STATS CARD ───
+  async function loadGFGStats() {
+    try {
+      const res = await fetch(
+        "https://gfgstatscard.vercel.app/yesitspriyanshu?raw=true"
+      );
+      const data = await res.json();
+
+      const school = data.School || 0;
+      const basic = data.Basic || 0;
+      const easy = data.Easy || 0;
+      const medium = data.Medium || 0;
+      const hard = data.Hard || 0;
+      const total = school + basic + easy + medium + hard;
+      const codingScore = data.total_score || total * 2;
+      const currentStreak = data.pod_solved_current_streak || 0;
+
+      // Update DOM
+      document.getElementById("gfg-school").textContent = school;
+      document.getElementById("gfg-basic").textContent = basic;
+      document.getElementById("gfg-easy").textContent = easy;
+      document.getElementById("gfg-medium").textContent = medium;
+      document.getElementById("gfg-hard").textContent = hard;
+      document.getElementById("gfg-total").textContent = total;
+      document.getElementById("gfg-coding-score").textContent = codingScore;
+      document.getElementById("gfg-problems-solved").textContent = total;
+      document.getElementById("gfg-current-streak").textContent =
+        currentStreak + " days";
+
+      // Animate ring — max 200 problems for full ring
+      const ring = document.getElementById("gfg-ring");
+      if (ring) {
+        const circumference = 314;
+        const progress = Math.min(total / 200, 1);
+        ring.style.strokeDashoffset = circumference * (1 - progress);
+      }
+    } catch (err) {
+      console.warn("Failed to load GFG stats:", err);
+    }
+  }
+  loadGFGStats();
 })
