@@ -1,397 +1,663 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Priyanshu Kumar - Software Developer & B.Tech CS student at Jaipur National University. Specializing in React, Python, DSA, and building innovative web & mobile apps.">
-    <meta property="og:title" content="Priyanshu Kumar | Software Developer">
-    <meta property="og:description" content="Software Developer based in Jaipur, Rajasthan. B.Tech CS @ Jaipur National University.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://priyanshu13052005.github.io/Priyanshu13072005.github.io/mysel.png">
-     
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Priyanshu Kumar | Software Developer">
-    <meta name="twitter:description" content="Software Developer based in Jaipur, Rajasthan. B.Tech CS @ Jaipur National University.">
-    <meta name="twitter:image" content="https://priyanshu13052005.github.io/Priyanshu13072005.github.io/mysel.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Priyanshu Kumar - Software Developer & B.Tech CS student at Jaipur National University. Specializing in React, Python, DSA, and building innovative web & mobile apps."
+    />
+    <meta property="og:title" content="Priyanshu Kumar | Software Developer" />
+    <meta
+      property="og:description"
+      content="Software Developer based in Jaipur, Rajasthan. B.Tech CS @ Jaipur National University."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://priyanshu13052005.github.io/Priyanshu13072005.github.io/mysel.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Priyanshu Kumar | Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Software Developer based in Jaipur, Rajasthan. B.Tech CS @ Jaipur National University."
+    />
+    <meta
+      name="twitter:image"
+      content="https://priyanshu13052005.github.io/Priyanshu13072005.github.io/mysel.png"
+    />
 
     <title>Priyanshu Kumar | Software Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body class="light-mode">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="light-mode">
+    <!-- Scroll progress bar -->
+    <div id="scroll-progress"></div>
     <header id="site-header">
-        <h1 class="logo-wrap"><a href="#home" class="logo">PRIYANSHU KUMAR</a></h1>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <div class="toggle-switch">
-                <input type="checkbox" id="theme-toggle">
-                <label for="theme-toggle" title="Toggle dark/light mode"></label>
-            </div>
+      <h1 class="logo-wrap">
+        <a href="#home" class="logo">PRIYANSHU KUMAR</a>
+      </h1>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="toggle-switch">
+          <input type="checkbox" id="theme-toggle" />
+          <label for="theme-toggle" title="Toggle dark/light mode"></label>
         </div>
+      </div>
     </header>
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-top">
-                <div class="hero-left">
-                    <h2 id="typing-text"></h2>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan &nbsp;|&nbsp; B.Tech CS @ Jaipur National University</p>
-                    <div class="skills-chips">
-                        <span class="chip">C++</span>
-                        <span class="chip">Python</span>
-                        <span class="chip">JavaScript</span>
-                        <span class="chip">HTML & CSS</span>
-                        <span class="chip">SQL / MySQL</span>
-                        <span class="chip">DSA</span>
-                        <span class="chip">Android Studio</span>
-                    </div>
-                </div>
-                <img src="mysel.png" alt="Photo of Priyanshu Kumar" class="hero-photo" width="230" height="230" loading="eager">
+      <div class="hero-content">
+        <div class="hero-top">
+          <div class="hero-left">
+            <h2 id="typing-text"></h2>
+            <p class="location">
+              <i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan
+              &nbsp;|&nbsp; B.Tech CS @ Jaipur National University
+            </p>
+            <div class="skills-chips">
+              <span class="chip">C++</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">HTML & CSS</span>
+              <span class="chip">SQL / MySQL</span>
+              <span class="chip">DSA</span>
+              <span class="chip">Android Studio</span>
             </div>
-            <p class="hero-desc">I'm a Passionate Software Developer who builds innovative, scalable web & mobile applications. Currently exploring Data Science.</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn-primary">Recent Projects ↓</a>
-                <a href="Resume.pdf" download class="btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
-            </div>
+          </div>
+          <img
+            src="mysel.png"
+            alt="Photo of Priyanshu Kumar"
+            class="hero-photo"
+            width="230"
+            height="230"
+            loading="eager"
+          />
         </div>
-    </section> 
+        <p class="hero-desc">
+          I'm a Passionate Software Developer who builds innovative, scalable
+          web & mobile applications. Currently exploring Data Science.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">Recent Projects ↓</a>
+          <a href="Resume.pdf" download class="btn-secondary"
+            ><i class="fas fa-download"></i> Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
     <section id="about" class="section about">
-        <h2>ABOUT ME</h2>
-        <div id="about-text"></div>
+      <h2>ABOUT ME</h2>
+      <div id="about-text"></div>
     </section>
     <section id="skills" class="section skills-section">
-        <h2>SKILLS</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
-                <div class="service-icon"><i class="fas fa-code"></i></div>
-                <h3>Technical Skills</h3>
-                <div class="skill-tags">
-                    <span class="tag-skill">C++</span>
-                    <span class="tag-skill">Python</span>
-                    <span class="tag-skill">DSA</span>
-                    <span class="tag-skill">HTML</span>
-                    <span class="tag-skill">CSS</span>
-                    <span class="tag-skill">JavaScript</span>
-                    <span class="tag-skill">SQL</span>
-                    <span class="tag-skill">MySQL</span>
-                </div>
-            </div>
-            <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
-                <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Data & Analysis</h3>
-                <div class="skill-tags">
-                    <span class="tag-skill">Pandas</span>
-                    <span class="tag-skill">NumPy</span>
-                    <span class="tag-skill">Matplotlib</span>
-                    <span class="tag-skill">Seaborn</span>
-                    <span class="tag-skill">Chart.js</span>
-                    <span class="tag-skill">MS Excel (PivotTables, VLOOKUP, Macros)</span>
-                </div>
-            </div>
-            <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
-                <div class="service-icon"><i class="fas fa-tools"></i></div>
-                <h3>Tools & Platforms</h3>
-                <div class="skill-tags">
-                    <span class="tag-skill">Android Studio</span>
-                    <span class="tag-skill">VSCode</span>
-                    <span class="tag-skill">MySQL Workbench</span>
-                    <span class="tag-skill">MS PowerPoint</span>
-                    <span class="tag-skill">IBM Watson</span>
-                    <span class="tag-skill">Git / GitHub</span>
-                </div>
-            </div>
-            <div class="skill-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
-                <div class="service-icon"><i class="fas fa-users"></i></div>
-                <h3>Soft Skills</h3>
-                <div class="skill-tags">
-                    <span class="tag-skill">Problem Solving</span>
-                    <span class="tag-skill">Adaptability</span>
-                    <span class="tag-skill">Communication</span>
-                    <span class="tag-skill">Time Management</span>
-                    <span class="tag-skill">Team Coordination</span>
-                    <span class="tag-skill">Leadership</span>
-                </div>
-            </div>
+      <h2>SKILLS</h2>
+      <div class="skills-grid">
+        <div
+          class="skill-card"
+          data-tilt
+          data-tilt-max="15"
+          data-tilt-speed="400"
+        >
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="tag-skill">C++</span>
+            <span class="tag-skill">Python</span>
+            <span class="tag-skill">DSA</span>
+            <span class="tag-skill">HTML</span>
+            <span class="tag-skill">CSS</span>
+            <span class="tag-skill">JavaScript</span>
+            <span class="tag-skill">SQL</span>
+            <span class="tag-skill">MySQL</span>
+          </div>
         </div>
+        <div
+          class="skill-card"
+          data-tilt
+          data-tilt-max="15"
+          data-tilt-speed="400"
+        >
+          <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data & Analysis</h3>
+          <div class="skill-tags">
+            <span class="tag-skill">Pandas</span>
+            <span class="tag-skill">NumPy</span>
+            <span class="tag-skill">Matplotlib</span>
+            <span class="tag-skill">Seaborn</span>
+            <span class="tag-skill">Chart.js</span>
+            <span class="tag-skill"
+              >MS Excel (PivotTables, VLOOKUP, Macros)</span
+            >
+          </div>
+        </div>
+        <div
+          class="skill-card"
+          data-tilt
+          data-tilt-max="15"
+          data-tilt-speed="400"
+        >
+          <div class="service-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag-skill">Android Studio</span>
+            <span class="tag-skill">VSCode</span>
+            <span class="tag-skill">MySQL Workbench</span>
+            <span class="tag-skill">MS PowerPoint</span>
+            <span class="tag-skill">IBM Watson</span>
+            <span class="tag-skill">Git / GitHub</span>
+          </div>
+        </div>
+        <div
+          class="skill-card"
+          data-tilt
+          data-tilt-max="15"
+          data-tilt-speed="400"
+        >
+          <div class="service-icon"><i class="fas fa-users"></i></div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag-skill">Problem Solving</span>
+            <span class="tag-skill">Adaptability</span>
+            <span class="tag-skill">Communication</span>
+            <span class="tag-skill">Time Management</span>
+            <span class="tag-skill">Team Coordination</span>
+            <span class="tag-skill">Leadership</span>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="projects" class="section projects">
-        <h2>PROJECTS</h2>
-        <div class="project-list">
-
-            <div class="project-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
-                <div class="project-preview">
-                    <img src="ResQ.jpeg" alt="ResQ Wildlife Rescue App" width="800" height="450" loading="lazy">
-                    <div class="project-overlay">
-                        <h3 class="project-title">ResQ – Wildlife Rescue App</h3>
-                        <div class="project-tags">
-                            <span class="tag">Android Studio</span>
-                            <span class="tag">PWA</span>
-                            <span class="tag">Offline-First</span>
-                            <span class="tag">Push Notifications</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">A Progressive Web App (PWA) that connects citizens who encounter injured wildlife with rescue teams. Built with offline-first capability, push notifications, and a service worker for seamless offline access. Handles user authentication and rescue-request management.</p>
-                <a href="ResQ_Case_Study.docx" class="view-case">View Case Study →</a>
+      <h2>PROJECTS</h2>
+      <div class="project-list">
+        <div
+          class="project-item"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <div class="project-preview">
+            <img
+              src="ResQ.jpeg"
+              alt="ResQ Wildlife Rescue App"
+              width="800"
+              height="450"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">ResQ – Wildlife Rescue App</h3>
+              <div class="project-tags">
+                <span class="tag">Android Studio</span>
+                <span class="tag">PWA</span>
+                <span class="tag">Offline-First</span>
+                <span class="tag">Push Notifications</span>
+              </div>
             </div>
-            <div class="project-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
-                <div class="project-preview">
-                    <img src="StudySpark.png" alt="StudySpark" width="800" height="500" loading="lazy">
-                    <div class="project-overlay">
-                        <h3 class="project-title">StudySpark</h3>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">OpenAI Whisper</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">FFmpeg</span>
-                            <span class="tag">JSON</span>
-                            <span class="tag">FAISS</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">Developed an intelligent Retrieval-Augmented Generation (RAG) AI Teaching Assistant that answers students' questions using course-specific lecture content instead of relying only on a general-purpose language model. The system converts educational videos into text using OpenAI Whisper, chunks the transcripts with timestamps, generates semantic embeddings, and stores them for efficient retrieval. When a student asks a question, the assistant retrieves the most relevant lecture segments and provides accurate, context-aware answers powered by an LLM.</p>
-                <a href="StudySpark_case_study.pdf" class="view-case">View Case Study →</a>
-            </div>
-            <div class="project-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
-                <div class="project-preview">
-                    <img src="Kanoonsathi.png" alt="Kanoon Saathi Legal AI Chatbot" width="800" height="450" loading="lazy">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Kanoon Saathi – Legal AI Assistant</h3>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">AI Chatbot</span>
-                            <span class="tag">IBM Watson</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">An AI-powered legal assistant web app built with React, designed to help citizens — especially those without easy access to lawyers — understand and address law-related issues, landlord-tenant relationships, and legal rights via an intelligent chatbot.</p>
-                <a href="https://kanoonsaathi.pe" target="_blank" rel="noopener" class="view-case">View Live Site →</a>
-            </div>
-            <div class="project-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
-                <div class="project-preview">
-                    <img src="SleepSensei.png" alt="Smart NGO Routing Algorithm" width="800" height="450" loading="lazy">
-                    <div class="project-overlay">
-                        <h3 class="project-title">SleepSensei</h3>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Algorithm Design</span>
-                            <span class="tag">React</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">Currently developing a smart routing algorithm that connects NGOs with individuals in distress who require assistance. Implements caching and intelligent matching to find the most suitable NGO for each case efficiently.</p>
-                <a href="#" class="view-case">View Case Study →</a>
-            </div>
-              <div class="project-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
-                <div class="project-preview">
-                    <img src="Life Steps.png" alt="Life Steps" width="800" height="450" loading="lazy">
-                    <div class="project-overlay">
-                        <h3 class="project-title">Life Steps</h3>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JAVASCRIPT</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">A web application that calculates calorie intake, BMR (Basal Metabolic Rate), and tracks nutritional progress. Features a dynamic dashboard with Chart.js graphs, dark/light mode toggle, and progress tracking bars.</p>
-                <a href="LifeSteps.pdf" class="view-case">View PPT →</a>
-            </div>
-
+          </div>
+          <p class="project-desc">
+            A Progressive Web App (PWA) that connects citizens who encounter
+            injured wildlife with rescue teams. Built with offline-first
+            capability, push notifications, and a service worker for seamless
+            offline access. Handles user authentication and rescue-request
+            management.
+          </p>
+          <a href="ResQ_Case_Study.docx" class="view-case">View Case Study →</a>
         </div>
+        <div
+          class="project-item"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <div class="project-preview">
+            <img
+              src="StudySpark.png"
+              alt="StudySpark"
+              width="800"
+              height="500"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">StudySpark</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenAI Whisper</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">FFmpeg</span>
+                <span class="tag">JSON</span>
+                <span class="tag">FAISS</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">
+            Developed an intelligent Retrieval-Augmented Generation (RAG) AI
+            Teaching Assistant that answers students' questions using
+            course-specific lecture content instead of relying only on a
+            general-purpose language model. The system converts educational
+            videos into text using OpenAI Whisper, chunks the transcripts with
+            timestamps, generates semantic embeddings, and stores them for
+            efficient retrieval. When a student asks a question, the assistant
+            retrieves the most relevant lecture segments and provides accurate,
+            context-aware answers powered by an LLM.
+          </p>
+          <a href="StudySpark_case_study.pdf" class="view-case"
+            >View Case Study →</a
+          >
+        </div>
+        <div
+          class="project-item"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <div class="project-preview">
+            <img
+              src="Kanoonsathi.png"
+              alt="Kanoon Saathi Legal AI Chatbot"
+              width="800"
+              height="450"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">Kanoon Saathi – Legal AI Assistant</h3>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">AI Chatbot</span>
+                <span class="tag">IBM Watson</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">
+            An AI-powered legal assistant web app built with React, designed to
+            help citizens — especially those without easy access to lawyers —
+            understand and address law-related issues, landlord-tenant
+            relationships, and legal rights via an intelligent chatbot.
+          </p>
+          <a
+            href="https://kanoonsaathi.pe"
+            target="_blank"
+            rel="noopener"
+            class="view-case"
+            >View Live Site →</a
+          >
+        </div>
+        <div
+          class="project-item"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <div class="project-preview">
+            <img
+              src="SleepSensei.png"
+              alt="Smart NGO Routing Algorithm"
+              width="800"
+              height="450"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">SleepSensei</h3>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Algorithm Design</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">
+            Currently developing a smart routing algorithm that connects NGOs
+            with individuals in distress who require assistance. Implements
+            caching and intelligent matching to find the most suitable NGO for
+            each case efficiently.
+          </p>
+          <a href="#" class="view-case">View Case Study →</a>
+        </div>
+        <div
+          class="project-item"
+          data-tilt
+          data-tilt-max="5"
+          data-tilt-speed="400"
+          data-tilt-perspective="1000"
+        >
+          <div class="project-preview">
+            <img
+              src="Life Steps.png"
+              alt="Life Steps"
+              width="800"
+              height="450"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <h3 class="project-title">Life Steps</h3>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JAVASCRIPT</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">
+            A web application that calculates calorie intake, BMR (Basal
+            Metabolic Rate), and tracks nutritional progress. Features a dynamic
+            dashboard with Chart.js graphs, dark/light mode toggle, and progress
+            tracking bars.
+          </p>
+          <a href="LifeSteps.pdf" class="view-case">View PPT →</a>
+        </div>
+      </div>
     </section>
 
     <section id="coding-stats" class="section stats">
-        <h2>CODING STATS</h2>
+      <h2>CODING STATS</h2>
 
-        <div class="stats-container">
-            <a href="https://www.geeksforgeeks.org/user/yesitspriyanshu" target="_blank" rel="noopener">
-                <img src="https://gfgstatscard.vercel.app/yesitspriyanshu" alt="GeeksforGeeks Stats" class="stats-img">
-            </a>
-        </div>
+      <div class="stats-container">
+        <a
+          href="https://www.geeksforgeeks.org/user/yesitspriyanshu"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="https://gfgstatscard.vercel.app/yesitspriyanshu"
+            alt="GeeksforGeeks Stats"
+            class="stats-img"
+          />
+        </a>
+      </div>
 
-        <!-- GitHub Streak -->
-        <h3 class="stats-subheading"><i class="fab fa-github"></i> GitHub</h3>
-        <div class="stats-container">
-            <a href="https://github.com/Priyanshu13052005" target="_blank" rel="noopener">
-                <img src="https://streak-stats.demolab.com/?user=Priyanshu13052005&theme=tokyonight&hide_border=true" alt="GitHub Streak" class="stats-img">
-            </a>
-        </div>
+      <!-- GitHub Streak -->
+      <h3 class="stats-subheading"><i class="fab fa-github"></i> GitHub</h3>
+      <div class="stats-container">
+        <a
+          href="https://github.com/Priyanshu13052005"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="https://streak-stats.demolab.com/?user=Priyanshu13052005&theme=tokyonight&hide_border=true"
+            alt="GitHub Streak"
+            class="stats-img"
+          />
+        </a>
+      </div>
     </section>
 
     <section id="experience" class="section experience">
-        <h2>EXPERIENCE</h2>
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">2023 (Virtual)</span>
-                    <h3>IBM SkillsBuild – AI-ML Internship</h3>
-                    <p class="tl-org"><i class="fas fa-building"></i> IBM SkillsBuild &nbsp;|&nbsp; <span class="tl-type">Internship</span></p>
-                    <ul>
-                        <li>Completed a 7-day IBM Boot Camp focused on AI and Machine Learning fundamentals.</li>
-                        <li>Worked with IBM Watson tools and earned AI certification.</li>
-                        <li>Selected among top 6 nationally for the New Level AI-ML Internship program.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">2023</span>
-                    <h3>Cultural Committee – Technorazz Fest</h3>
-                    <p class="tl-org"><i class="fas fa-university"></i> Jaipur National University &nbsp;|&nbsp; <span class="tl-type">Committee Member</span></p>
-                    <ul>
-                        <li>Served as a Liaison Officer coordinating between organizers, participants (650+), and sponsors.</li>
-                        <li>Assisted in planning and conducting the Hackathon event, including team coordination and reporting.</li>
-                        <li>Managed registrations, ensured smooth execution of all event activities.</li>
-                    </ul>
-                </div>
-            </div>
-            
+      <h2>EXPERIENCE</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 (Virtual)</span>
+            <h3>IBM SkillsBuild – AI-ML Internship</h3>
+            <p class="tl-org">
+              <i class="fas fa-building"></i> IBM SkillsBuild &nbsp;|&nbsp;
+              <span class="tl-type">Internship</span>
+            </p>
+            <ul>
+              <li>
+                Completed a 7-day IBM Boot Camp focused on AI and Machine
+                Learning fundamentals.
+              </li>
+              <li>Worked with IBM Watson tools and earned AI certification.</li>
+              <li>
+                Selected among top 6 nationally for the New Level AI-ML
+                Internship program.
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3>Cultural Committee – Technorazz Fest</h3>
+            <p class="tl-org">
+              <i class="fas fa-university"></i> Jaipur National University
+              &nbsp;|&nbsp; <span class="tl-type">Committee Member</span>
+            </p>
+            <ul>
+              <li>
+                Served as a Liaison Officer coordinating between organizers,
+                participants (650+), and sponsors.
+              </li>
+              <li>
+                Assisted in planning and conducting the Hackathon event,
+                including team coordination and reporting.
+              </li>
+              <li>
+                Managed registrations, ensured smooth execution of all event
+                activities.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="certificates" class="section certificates">
-        <h2>CERTIFICATIONS</h2>
-        <div class="certificates-grid">
-            <div class="certificate-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
-                <div class="cert-header">
-                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
-                    <span class="cert-date">Aug 2024</span>
-                </div>
-                <div class="cert-body">
-                    <h3>AI-ML Virtual Internship</h3>
-                    <p class="cert-issuer"><i class="fas fa-building"></i> IBM SkillsBuild</p>
-                    <p class="cert-desc">Earned certification for fundamentals of Artificial Intelligence, Machine Learning, and IBM Watson tools, scoring in the top tier nationally.</p>
-                </div>
-                <div class="cert-footer">
-                    <div class="cert-tags">
-                        <span class="tag-skill">AI/ML</span>
-                        <span class="tag-skill">IBM Watson</span>
-                    </div>
-                    <a href="Final Certificate IBM SkillsBuild.pdf" class="view-case">View Certificate →</a>
-                </div>
+      <h2>CERTIFICATIONS</h2>
+      <div class="certificates-grid">
+        <div
+          class="certificate-card"
+          data-tilt
+          data-tilt-max="10"
+          data-tilt-speed="400"
+        >
+          <div class="cert-header">
+            <div class="cert-icon"><i class="fas fa-brain"></i></div>
+            <span class="cert-date">Aug 2024</span>
+          </div>
+          <div class="cert-body">
+            <h3>AI-ML Virtual Internship</h3>
+            <p class="cert-issuer">
+              <i class="fas fa-building"></i> IBM SkillsBuild
+            </p>
+            <p class="cert-desc">
+              Earned certification for fundamentals of Artificial Intelligence,
+              Machine Learning, and IBM Watson tools, scoring in the top tier
+              nationally.
+            </p>
+          </div>
+          <div class="cert-footer">
+            <div class="cert-tags">
+              <span class="tag-skill">AI/ML</span>
+              <span class="tag-skill">IBM Watson</span>
             </div>
-
-            <div class="certificate-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
-                <div class="cert-header">
-                    <div class="cert-icon"><i class="fas fa-code"></i></div>
-                    <span class="cert-date">2024</span>
-                </div>
-                <div class="cert-body">
-                    <h3>IBM SkillsBuild Internship Winner</h3>
-                    <p class="cert-issuer"><i class="fas fa-award"></i> IBM SkillsBuild</p>
-                    <p class="cert-desc">Selected among the top 6 out of 650 teams at the National Level AI-ML Internship by IBM SkillsBuild!</p>
-                </div>
-                <div class="cert-footer">
-                    <div class="cert-tags">
-                        <span class="tag-skill">IBM Watson Assistant</span>
-                        <span class="tag-skill">IBM</span>
-                        <span class="tag-skill">AI/Ml</span>
-                    </div>
-                    <a href="Winning Certificate.pdf" class="view-case">View Certificate →</a>
-                </div>
-            </div>
-
-            <div class="certificate-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
-                <div class="cert-header">
-                    <div class="cert-icon"><i class="fas fa-database"></i></div>
-                    <span class="cert-date">2024</span>
-                </div>
-                <div class="cert-body">
-                    <h3>SQL & Database Management</h3>
-                    <p class="cert-issuer"><i class="fas fa-database"></i> MySQL Workbench / Stanford / Coursera</p>
-                    <p class="cert-desc">Certified in database design, querying, complex joins, subqueries, indexing, and transaction management.</p>
-                </div>
-                <div class="cert-footer">
-                    <div class="cert-tags">
-                        <span class="tag-skill">SQL</span>
-                        <span class="tag-skill">MySQL</span>
-                        <span class="tag-skill">Relational DB</span>
-                    </div>
-                    <a href="#" class="view-case">Verify Credential →</a>
-                </div>
-            </div>
+            <a href="Final Certificate IBM SkillsBuild.pdf" class="view-case"
+              >View Certificate →</a
+            >
+          </div>
         </div>
+
+        <div
+          class="certificate-card"
+          data-tilt
+          data-tilt-max="10"
+          data-tilt-speed="400"
+        >
+          <div class="cert-header">
+            <div class="cert-icon"><i class="fas fa-code"></i></div>
+            <span class="cert-date">2024</span>
+          </div>
+          <div class="cert-body">
+            <h3>IBM SkillsBuild Internship Winner</h3>
+            <p class="cert-issuer">
+              <i class="fas fa-award"></i> IBM SkillsBuild
+            </p>
+            <p class="cert-desc">
+              Selected among the top 6 out of 650 teams at the National Level
+              AI-ML Internship by IBM SkillsBuild!
+            </p>
+          </div>
+          <div class="cert-footer">
+            <div class="cert-tags">
+              <span class="tag-skill">IBM Watson Assistant</span>
+              <span class="tag-skill">IBM</span>
+              <span class="tag-skill">AI/Ml</span>
+            </div>
+            <a href="Winning Certificate.pdf" class="view-case"
+              >View Certificate →</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="certificate-card"
+          data-tilt
+          data-tilt-max="10"
+          data-tilt-speed="400"
+        >
+          <div class="cert-header">
+            <div class="cert-icon"><i class="fas fa-database"></i></div>
+            <span class="cert-date">2024</span>
+          </div>
+          <div class="cert-body">
+            <h3>SQL & Database Management</h3>
+            <p class="cert-issuer">
+              <i class="fas fa-database"></i> MySQL Workbench / Stanford /
+              Coursera
+            </p>
+            <p class="cert-desc">
+              Certified in database design, querying, complex joins, subqueries,
+              indexing, and transaction management.
+            </p>
+          </div>
+          <div class="cert-footer">
+            <div class="cert-tags">
+              <span class="tag-skill">SQL</span>
+              <span class="tag-skill">MySQL</span>
+              <span class="tag-skill">Relational DB</span>
+            </div>
+            <a href="#" class="view-case">Verify Credential →</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="education" class="section education">
-        <h2>EDUCATION</h2>
-        <div class="edu-grid">
-            <div class="edu-card">
-                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="edu-details">
-                    <h3>B.Tech – Computer Science Engineering</h3>
-                    <p class="edu-org">Jaipur National University</p>
-                    <p class="edu-meta">2023 – 2027</p>
-                </div>
-            </div>
-            <div class="edu-card">
-                <div class="edu-icon"><i class="fas fa-school"></i></div>
-                <div class="edu-details">
-                    <h3>CBSE Class XII</h3>
-                    <p class="edu-org">DAV Centenary Public School</p>
-                    <p class="edu-meta">2023</p>
-                </div>
-            </div>
-            <div class="edu-card">
-                <div class="edu-icon"><i class="fas fa-school"></i></div>
-                <div class="edu-details">
-                    <h3>CBSE Class X</h3>
-                    <p class="edu-org">DAV Centenary Public School</p>
-                    <p class="edu-meta">2021</p>
-                </div>
-            </div>
+      <h2>EDUCATION</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <h3>B.Tech – Computer Science Engineering</h3>
+            <p class="edu-org">Jaipur National University</p>
+            <p class="edu-meta">2023 – 2027</p>
+          </div>
         </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-details">
+            <h3>CBSE Class XII</h3>
+            <p class="edu-org">DAV Centenary Public School</p>
+            <p class="edu-meta">2023</p>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-details">
+            <h3>CBSE Class X</h3>
+            <p class="edu-org">DAV Centenary Public School</p>
+            <p class="edu-meta">2021</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="section contact">
-        <h2>CONTACT ME</h2>
-        <p>Available for collaborations & freelance ↓</p>
-        <p class="contact-email"><i class="fas fa-envelope"></i> <a href="mailto:priyanshukumar130705@gmail.com">priyanshukumar130705@gmail.com</a></p>
-        <p class="contact-phone"><i class="fas fa-phone"></i> <a href="tel:+917597118478">+91 7597118478</a></p>
-        <form id="contact-form" novalidate>
-            <input type="text" id="form-name" placeholder="Your Name" required>
-            <input type="email" id="form-email" placeholder="Your Email" required>
-            <textarea id="form-message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-            <p id="form-status" class="form-status"></p>
-        </form>
+      <h2>CONTACT ME</h2>
+      <p>Available for collaborations & freelance ↓</p>
+      <p class="contact-email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:priyanshukumar130705@gmail.com"
+          >priyanshukumar130705@gmail.com</a
+        >
+      </p>
+      <p class="contact-phone">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+917597118478">+91 7597118478</a>
+      </p>
+      <form id="contact-form" novalidate>
+        <input type="text" id="form-name" placeholder="Your Name" required />
+        <input type="email" id="form-email" placeholder="Your Email" required />
+        <textarea
+          id="form-message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+        <p id="form-status" class="form-status"></p>
+      </form>
     </section>
     <footer>
-        <div class="footer-social">
-            <a href="https://github.com/Priyanshu13052005" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/priyanshu-kumar-79920a31b" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:priyanshukumar130705@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p>&copy; 2026 Priyanshu Kumar. All rights reserved.</p>
+      <div class="footer-social">
+        <a
+          href="https://github.com/Priyanshu13052005"
+          target="_blank"
+          rel="noopener"
+          title="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/priyanshu-kumar-79920a31b"
+          target="_blank"
+          rel="noopener"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:priyanshukumar130705@gmail.com" title="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <p>&copy; 2026 Priyanshu Kumar. All rights reserved.</p>
     </footer>
     <button id="back-to-top" aria-label="Back to top" title="Back to top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
     <noscript>
-        <style>
-            .section { opacity: 1 !important; transform: none !important; }
-            #typing-text::before { content: 'SOFTWARE DEVELOPER'; }
-            #about-text::before { content: 'Hi! I\'m Priyanshu Kumar, a passionate software developer and B.Tech CS student at Jaipur National University.'; }
-        </style>
+      <style>
+        .section {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        #typing-text::before {
+          content: "SOFTWARE DEVELOPER";
+        }
+        #about-text::before {
+          content: "Hi! I'm Priyanshu Kumar, a passionate software developer and B.Tech CS student at Jaipur National University.";
+        }
+      </style>
     </noscript>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
-</body>
+  </body>
 </html>

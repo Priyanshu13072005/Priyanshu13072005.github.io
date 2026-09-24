@@ -90,6 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // ─── SCROLL PROGRESS BAR ───
+  const scrollProgress = document.getElementById("scroll-progress");
+  function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (scrollProgress) scrollProgress.style.width = pct + "%";
+  }
+
   // ─── HEADER: SCROLL GLASS EFFECT ───
   window.addEventListener(
     "scroll",
@@ -100,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.remove("scrolled");
       }
       updateActiveNavLink();
+      updateScrollProgress();
     },
     { passive: true },
   );
@@ -137,8 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ─── CONTACT FORM ───
   const form = document.getElementById("contact-form");
   const formStatus = document.getElementById("form-status");
-  const WEB3FORMS_ACCESS_KEY = "d659fd72-cb2a-4fad-896a-2e450a3c3cae"; 
-  
+  const WEB3FORMS_ACCESS_KEY = "d659fd72-cb2a-4fad-896a-2e450a3c3cae";
+
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -160,7 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (WEB3FORMS_ACCESS_KEY === "YOUR_ACCESS_KEY_HERE") {
-        formStatus.textContent = "⚠️ Setup needed: Please add your Web3Forms access key in script.js";
+        formStatus.textContent =
+          "⚠️ Setup needed: Please add your Web3Forms access key in script.js";
         formStatus.className = "form-status error";
         return;
       }
@@ -172,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json"
+          Accept: "application/json",
         },
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
@@ -180,31 +192,32 @@ document.addEventListener("DOMContentLoaded", () => {
           email: email,
           message: message,
           subject: `New Portfolio Message from ${name}`,
-          from_name: "Portfolio Form"
+          from_name: "Portfolio Form",
+        }),
+      })
+        .then(async (response) => {
+          const json = await response.json();
+          if (response.status === 200) {
+            formStatus.textContent =
+              "✅ Message sent! I'll get back to you soon.";
+            formStatus.className = "form-status success";
+            form.reset();
+          } else {
+            formStatus.textContent = `❌ Error: ${json.message || "Failed to send."}`;
+            formStatus.className = "form-status error";
+          }
         })
-      })
-      .then(async (response) => {
-        const json = await response.json();
-        if (response.status === 200) {
-          formStatus.textContent = "✅ Message sent! I'll get back to you soon.";
-          formStatus.className = "form-status success";
-          form.reset();
-        } else {
-          formStatus.textContent = `❌ Error: ${json.message || "Failed to send."}`;
+        .catch((error) => {
+          console.error(error);
+          formStatus.textContent = "❌ Network error. Please try again later.";
           formStatus.className = "form-status error";
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-        formStatus.textContent = "❌ Network error. Please try again later.";
-        formStatus.className = "form-status error";
-      })
-      .finally(() => {
-        setTimeout(() => {
-          formStatus.className = "form-status";
-          formStatus.textContent = "";
-        }, 6000);
-      });
+        })
+        .finally(() => {
+          setTimeout(() => {
+            formStatus.className = "form-status";
+            formStatus.textContent = "";
+          }, 6000);
+        });
     });
   }
 
@@ -223,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     { threshold: 0.1 },
   );
-  
+
   sections.forEach((section) => observer.observe(section));
 
   // ─── BACK TO TOP ───
@@ -245,4 +258,4 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-})
+});
